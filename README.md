@@ -6,7 +6,10 @@ Install Instructions
 To instal use:
 install_github("bwd29/Rfunc")
 
-Usage Instructions/Example
+Usage Instructions/Example R code
+
+
+
 
 install_github("bwd29/Rfunc")
 
