@@ -22,7 +22,7 @@ HCLUST<-function(data, k){
         }
       }
     }
-    
+
     # merge the cluster
     if(cluster.values[col] == 0 & cluster.values[row] == 0){
       cluster.values[col] = cluster.id
@@ -38,27 +38,27 @@ HCLUST<-function(data, k){
     else {
       cluster.values[which(cluster.values == max(cluster.values[row],cluster.values[col]))] <- min(cluster.values[col],cluster.values[row])
     }
-    
+
     clusters = clusters-1
-    
+
   }
-  
+
   #replace the cluster ids
-  
+
   counter <- max(cluster.values) + 1
-  
+
   for(i in 1:length(cluster.values)){
     if(cluster.values[i] == 0){
       cluster.values[i] = counter
       counter = counter +1
     }
   }
-  
+
   cluster.values = cluster.values + k
   for(i in 1:k){
     cluster.values[which(cluster.values == max(cluster.values))] = i
   }
-  
-  
+
+
   return(cluster.values)
 }
