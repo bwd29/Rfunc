@@ -1,3 +1,5 @@
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
+test_that("Correct return amount", {
+  data<-as.numeric(c(1,2,3,4,1,2,3,4,5,6,1,2,3,4,5))
+  cl <- SPECC(data, 3, 8)
+  expect_equal(length(cl), length(data))
 })

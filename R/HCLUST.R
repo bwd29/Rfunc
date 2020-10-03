@@ -1,5 +1,16 @@
+#' Hierarchical clustering method
+#'
+#' @param data data as a matrix
+#' @param k number of clusters
+#'
+#' @return vector of cluster IDs
+#' @export
+#'
+#' @examples
+#'HCLUST(as.matrix(c(1,2,3,4,1,2,3,4,5,6,1,2,3,4,5)), 3)
 HCLUST<-function(data, k){
   # get the distances
+  data<-as.matrix(data)
   N <- nrow(data)
   dist.mat <- as.matrix(stats::dist(data))
   #enter loop to reduce down based on minimum values

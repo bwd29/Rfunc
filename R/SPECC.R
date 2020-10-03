@@ -1,4 +1,16 @@
+#' Spectral Clustering
+#'
+#' @param data data as a matrix
+#' @param k number of clusters
+#' @param epsilon distance metric
+#'
+#' @return vector of cluster IDs
+#' @export
+#'
+#' @examples
+#' SPECC(as.matrix(c(1,2,3,4,1,2,3,4,1,2,3,4)), 2, 3)
 SPECC <- function(data, k, epsilon){
+  data<-as.matrix(data)
   N <- nrow(data)
   #compute the similarity matrix with guasian similarity
   sim.mat <- matrix(0,nrow=N, ncol=N)

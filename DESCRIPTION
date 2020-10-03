@@ -1,18 +1,16 @@
 Package: Rfunc
-Title: What the Package Does (One Line, Title Case)
+Title: Spectral and Hierarchical Clustering (Proj 1)
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Brian",
+           family = "Donnelly",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+           email = "bwd29@nau.edu")
+Description: This package has two funftions, SPECC fot spectral clustering and HCLUST for agglomerative hierarchical clustering.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests: 
-    testthat
+    testthat, Matrix
