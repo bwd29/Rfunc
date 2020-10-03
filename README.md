@@ -3,6 +3,7 @@ Spectral and Hierarchical Clustering (Proj 1)
 
 
 ################################
+
 Install Instructions
 
 To instal use:
@@ -10,6 +11,7 @@ install_github("bwd29/Rfunc")
 
 
 ################################
+
 Usage Instructions/Example R code
 
 
